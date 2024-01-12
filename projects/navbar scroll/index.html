@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      nav {
+        display: none;
+        position: sticky;
+        top: 0;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: rgb(33, 33, 65);
+        color: white;
+        transition: all 1s;
+      }
+
+      nav.visible {
+        display: flex;
+      }
+
+      @keyframes slide-in {
+        from {
+          transform: transl;
+        }
+      }
+
+      .links {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        list-style: none;
+      }
+
+      img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <p class="logo">Logo</p>
+      <ul class="links">
+        <li>Link 1</li>
+        <li>Link 2</li>
+      </ul>
+    </nav>
+    <h1>Navbar scroll</h1>
+    <img
+      src="https://th.bing.com/th/id/OIP.bJJ-RKMvKRfRPnNYX4jFeAHaFK?rs=1&pid=ImgDetMain"
+      alt="Hero image"
+    />
+    <img
+      src="https://th.bing.com/th/id/R.b0bded0a7cf2035124c2b8355025f13e?rik=e%2bRBHt4LS8Th7g&riu=http%3a%2f%2fscreenfish.net%2fwp-content%2fuploads%2f2015%2f10%2fsuper-collage.jpg&ehk=nNClp9oH9vH%2bgkLxNnCJ3BJOEZ9Hpm%2bkgimkG5nOcMc%3d&risl=&pid=ImgRaw&r=0"
+      alt="Hero image"
+    />
+    <img
+      src="https://th.bing.com/th/id/OIP.wziWU51okT87XDnuyYl1AQHaEe?rs=1&pid=ImgDetMain"
+      alt="Hero image"
+    />
+    <script src="./index.js"></script>
+  </body>
+</html>
